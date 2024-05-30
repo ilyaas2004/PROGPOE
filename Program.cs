@@ -13,17 +13,18 @@ namespace PROGPOE
     {
         static void Main(string[] args)
         {
-            recipeItems recipe = new recipeItems();
+            RecipeManager recipeManager = new RecipeManager();
 
             while (true)
             {
                 Console.WriteLine("Select an option:");
                 Console.WriteLine("1. Enter Recipe Details");
-                Console.WriteLine("2. Display Recipe");
-                Console.WriteLine("3. Scale Recipe");
-                Console.WriteLine("4. Reset Quantities");
-                Console.WriteLine("5. Clear All Data");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("2. Display All Recipes");
+                Console.WriteLine("3. Display Specific Recipe");
+                Console.WriteLine("4. Scale Recipe");
+                Console.WriteLine("5. Reset Quantities");
+                Console.WriteLine("6. Clear All Data");
+                Console.WriteLine("7. Exit");
 
                 try
                 {
@@ -32,21 +33,24 @@ namespace PROGPOE
                     switch (choice)
                     {
                         case 1:
-                            recipe.EnterRecipeDetails();
+                            recipeManager.EnterRecipeDetails();
                             break;
                         case 2:
-                            recipe.DisplayRecipe();
+                            recipeManager.DisplayAllRecipes();
                             break;
                         case 3:
-                            recipe.ScaleRecipe();
+                            recipeManager.DisplaySpecificRecipe();
                             break;
                         case 4:
-                            recipe.ResetQuantities();
+                            recipeManager.ScaleRecipe();
                             break;
                         case 5:
-                            recipe.ClearAllData();
+                            recipeManager.ResetQuantities();
                             break;
                         case 6:
+                            recipeManager.ClearAllData();
+                            break;
+                        case 7:
                             Environment.Exit(0);
                             break;
                         default:

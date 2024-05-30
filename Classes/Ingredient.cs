@@ -12,17 +12,23 @@ namespace PROGPOE.Classes
         public string Name { get; set; }
         public decimal Quantity { get; set; }
         public string Unit { get; set; }
+        public int Calories { get; set; }
+        public string FoodGroup { get; set; }
+        private decimal originalQuantity;
 
-        public Ingredient(string name, decimal quantity, string unit)
+        public Ingredient(string name, decimal quantity, string unit, int calories, string foodGroup)
         {
             Name = name;
             Quantity = quantity;
+            originalQuantity = quantity; // Store the original quantity for resetting later
             Unit = unit;
+            Calories = calories;
+            FoodGroup = foodGroup;
         }
 
         public void ResetQuantity()
         {
-            
+            Quantity = originalQuantity;
         }
     }
 }
