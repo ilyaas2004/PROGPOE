@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PROGPOE.Classes
 {
-    internal class Ingredient
+    public class Ingredient
     {
         public string Name { get; set; }
         public decimal Quantity { get; set; }

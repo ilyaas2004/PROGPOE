@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROGPOE", "PROGPOE.csproj", "{0E90CA75-75D8-4BF8-A7E7-9817EB35E2D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeManagerWPF", "..\RecipeManagerWPF\RecipeManagerWPF.csproj", "{7277FE67-F75C-4361-AA07-056C31329A0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0E90CA75-75D8-4BF8-A7E7-9817EB35E2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E90CA75-75D8-4BF8-A7E7-9817EB35E2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E90CA75-75D8-4BF8-A7E7-9817EB35E2D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7277FE67-F75C-4361-AA07-056C31329A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7277FE67-F75C-4361-AA07-056C31329A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7277FE67-F75C-4361-AA07-056C31329A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7277FE67-F75C-4361-AA07-056C31329A0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

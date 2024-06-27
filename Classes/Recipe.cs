@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PROGPOE.Classes
 {
-    internal class recipeItems
+    public  class Recipe
     {
         public string Name { get; set; }
         public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
